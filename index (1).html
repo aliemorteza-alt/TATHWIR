@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tathwir</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Mulish:wght@400;600;700&display=swap">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#0b0c26;--s:#151833;--l:#2a2f5c;--ink:#f2f4ff;--mut:#a9b0d6;--hi:#c9b8ff;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Mulish,system-ui,sans-serif}
+h1{font-family:Montserrat,system-ui,sans-serif;line-height:1.15;margin:0}
+header{position:sticky;top:0;z-index:5;background:rgba(11,12,38,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--l)}
+header .w{max-width:1080px;margin:0 auto;padding:0 20px;display:flex;align-items:center;height:68px}
+.brand{font:800 22px Montserrat,sans-serif;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.brand i{display:block;height:34px;font-style:normal}
+.brand i svg{display:block;height:100%;width:auto;fill:url(#twg)}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:13px 24px;border-radius:12px;background:linear-gradient(90deg,#2563eb,#7c3aed);color:#fff;border:0}
+.btn:hover{filter:brightness(1.12)}
+.btn:focus-visible{outline:3px solid var(--hi);outline-offset:3px}
+.login{min-height:calc(100vh - 68px);display:grid;place-items:center;padding:32px 20px;background:radial-gradient(900px 420px at 80% -10%,rgba(124,58,237,.28),transparent 70%)}
+.lbox{background:var(--s);border:1px solid var(--l);border-radius:18px;padding:28px;max-width:440px;width:100%}
+.lbox h1{font-size:28px;font-weight:800;margin-bottom:6px}
+.lbox h1 em{font-style:normal;color:var(--hi)}
+.lbox p{color:var(--mut);margin:0 0 18px;font-size:15px}
+.lbox label{display:block;font-weight:700;font-size:13px;margin-bottom:14px}
+.lbox input{display:block;width:100%;margin-top:6px;padding:12px 14px;border:1px solid var(--l);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+.lbox input:focus-visible{outline:3px solid var(--hi);outline-offset:1px}
+.lbox button.btn{width:100%;cursor:pointer;font:inherit;font-weight:700}
+.msg{color:#ffb4b4;font-size:14px;min-height:20px;margin:-4px 0 10px}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><linearGradient id="twg" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#6AA0FF"/><stop offset="1" stop-color="#C9B8FF"/></linearGradient><linearGradient id="twg2" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#7C3AED"/></linearGradient><path id="twlogo" d="M389 -160Q395 -193 366 -198Q348 -202 337 -186Q322 -169 300 -163Q231 -145 156 -133Q117 -127 81.0 -117.5Q45 -108 11 -96Q-17 -83 4 -63Q14 -56 36.0 -48.0Q58 -40 84.0 -31.5Q110 -23 132.0 -17.0Q154 -11 164 -9Q194 -3 217 -3Q227 -3 236.5 -4.0Q246 -5 255 -7Q302 -19 330 -73Q339 -90 349.5 -107.0Q360 -124 373 -136Q386 -143 389 -160ZM590 51 647 -62Q652 -70 647.0 -75.5Q642 -81 635 -79Q590 -70 544.5 -61.5Q499 -53 452 -45Q450 -44 447.0 -42.5Q444 -41 443 -39L387 75Q383 82 387.5 87.5Q392 93 399 92Q445 84 490.5 75.0Q536 66 582 58Q588 55 590 51ZM334 -104Q344 -104 350.5 -110.0Q357 -116 361 -123Q372 -133 388.0 -141.5Q404 -150 420 -153Q442 -157 463.0 -162.0Q484 -167 506 -172Q564 -187 593.5 -228.5Q623 -270 628 -337Q629 -345 621.5 -349.0Q614 -353 608 -347Q597 -337 579.0 -331.0Q561 -325 543 -322Q524 -318 505.0 -314.5Q486 -311 466 -308Q424 -300 396 -282H397Q360 -260 340 -210Q329 -193 322 -176Q316 -168 311.0 -159.5Q306 -151 306 -139Q306 -127 314.0 -115.5Q322 -104 334 -104ZM944 -266V-267Q962 -245 1006 -245Q1022 -245 1035 -248Q1037 -244 1038 -241Q1038 -240 1038.0 -238.5Q1038 -237 1038 -235Q1038 -234 1038.5 -233.5Q1039 -233 1039 -233V-232Q1012 -202 971 -185Q888 -151 802.0 -118.0Q716 -85 640 -43Q631 -37 631 -25Q631 -10 647 -8Q676 -6 706.0 -3.0Q736 0 766 0Q770 0 771.0 0.0Q772 0 776 0Q801 0 823.0 -2.0Q845 -4 867 -8Q917 -18 959.0 -46.5Q1001 -75 1034.5 -113.5Q1068 -152 1090 -193Q1105 -222 1116.0 -257.5Q1127 -293 1128 -333V-339Q1128 -408 1080 -457Q1073 -464 1061.5 -471.0Q1050 -478 1036 -478Q1023 -478 1010 -465Q992 -445 980.0 -420.5Q968 -396 956 -370Q949 -356 939.5 -337.5Q930 -319 930 -301Q930 -289 934.0 -281.0Q938 -273 944 -266ZM1248 -761 1269 -447Q1270 -438 1278.0 -436.5Q1286 -435 1291 -442L1363 -559L1343 -872Q1342 -881 1334.0 -883.5Q1326 -886 1321 -878ZM1079 -397 1058 -273Q1057 -268 1060.5 -263.5Q1064 -259 1069 -259Q1075 -259 1077 -260Q1145 -266 1208.0 -279.5Q1271 -293 1332 -311Q1403 -332 1456 -366Q1502 -396 1534.0 -437.0Q1566 -478 1592 -527V-526Q1602 -543 1602 -564Q1602 -592 1582 -616Q1560 -643 1523 -643Q1493 -643 1467.0 -631.5Q1441 -620 1427 -608Q1381 -564 1338.0 -519.5Q1295 -475 1253 -426Q1216 -419 1177.0 -415.0Q1138 -411 1089 -407Q1081 -405 1079 -397ZM1481 -485Q1448 -469 1411.0 -458.5Q1374 -448 1333 -440Q1352 -459 1372.5 -477.0Q1393 -495 1417 -508Q1426 -513 1437 -513Q1454 -513 1466.0 -505.0Q1478 -497 1481 -485ZM1809 -637 1866 -750Q1871 -758 1866.0 -763.5Q1861 -769 1854 -767Q1809 -758 1763.5 -749.5Q1718 -741 1671 -733Q1669 -732 1666.0 -730.5Q1663 -729 1662 -727L1606 -613Q1602 -606 1606.5 -600.5Q1611 -595 1618 -596Q1664 -604 1709.5 -613.0Q1755 -622 1801 -630Q1807 -633 1809 -637ZM1252 -266Q1252 -286 1262.0 -317.5Q1272 -349 1293 -389Q1294 -391 1294 -395Q1294 -406 1284 -409L1285 -408Q1281 -410 1278 -410Q1274 -410 1271.5 -409.0Q1269 -408 1267 -406Q1240 -367 1215.5 -323.5Q1191 -280 1175 -229Q1172 -217 1168.5 -198.0Q1165 -179 1165 -164Q1165 -104 1201.0 -84.0Q1237 -64 1297 -64Q1338 -64 1384 -73Q1402 -77 1420.0 -81.0Q1438 -85 1456 -91Q1529 -114 1593.0 -151.0Q1657 -188 1702 -240Q1727 -269 1745.5 -315.0Q1764 -361 1764 -404Q1764 -420 1762.0 -433.0Q1760 -446 1756 -459L1733 -531Q1731 -539 1724.0 -539.5Q1717 -540 1712 -533L1637 -424Q1634 -419 1636 -414Q1642 -399 1646.5 -383.5Q1651 -368 1656 -351Q1660 -337 1662.5 -326.5Q1665 -316 1665 -308L1611 -281Q1553 -253 1483 -236Q1470 -232 1457.0 -229.0Q1444 -226 1430 -223Q1406 -218 1381.0 -213.0Q1356 -208 1327 -208Q1295 -208 1273.5 -221.0Q1252 -234 1252 -266Z"/></defs></svg>
+<header><div class="w"><div class="brand"><i class="lg"><svg viewBox="-45 -924 1960 1056" role="img" aria-label="Tathwir"><use href="#twlogo"/></svg></i>Tathwir</div></div></header>
+<main class="login"><form class="lbox" id="f" novalidate>
+<label>Nama lengkap<input name="name" required maxlength="80" autocomplete="name"></label>
+<label>Email<input name="email" type="email" required maxlength="120" autocomplete="email"></label>
+<div class="msg" id="msg" role="alert"></div>
+<button class="btn" type="submit">Mulai belajar</button>
+</form></main>
+<script>
+(function(){
+var f=document.getElementById("f"),m=document.getElementById("msg");
+try{var me=JSON.parse(localStorage.getItem("tathwir-me")||"null");if(me){f.name.value=me.name||"";f.email.value=me.email||""}}catch(e){}
+f.addEventListener("submit",function(e){
+  e.preventDefault();
+  var n=f.name.value.replace(/\s+/g," ").trim(),em=f.email.value.trim().toLowerCase();
+  if(!n||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){m.textContent="Isi nama dan email dengan benar.";return}
+  try{localStorage.setItem("tathwir-prefill",JSON.stringify({name:n,email:em}))}catch(x){}
+  location.href="app.html";
+});
+})();
+</script>
+</body></html>
