@@ -4,6 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Tathwir</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0B0C26">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Tathwir">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1112,5 +1118,6 @@ try{
 }catch(e){}
 })();
 </script>
+<script>if("serviceWorker"in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})}</script>
 </body>
 </html>
