@@ -1,0 +1,4 @@
+/* Tathwir: pengaturan situs.
+   Tempel URL web app Google Apps Script di antara tanda kutip (lihat README.md).
+   Kosong = mode demo: semua data hanya tersimpan di browser ini. */
+window.TATHWIR = { api: "https://script.google.com/macros/s/AKfycbwtczvabLqHwQ60PvdkctRJqfpAFUbTDmuyOQOUBlKXgg4ybnV8OY9o5Ppij9C5FFlM/exec" };

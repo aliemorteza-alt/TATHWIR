@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tathwir</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Mulish:wght@400;600;700&display=swap">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#0b0c26;--s:#151833;--l:#2a2f5c;--ink:#f2f4ff;--mut:#a9b0d6;--hi:#c9b8ff;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Mulish,system-ui,sans-serif}
+h1{font-family:Montserrat,system-ui,sans-serif;line-height:1.15;margin:0}
+header{position:sticky;top:0;z-index:5;background:rgba(11,12,38,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--l)}
+header .w{max-width:1080px;margin:0 auto;padding:0 20px;display:flex;align-items:center;height:68px}
+.brand{font:800 22px Montserrat,sans-serif;letter-spacing:-.01em;display:flex;align-items:center;gap:10px}
+.brand i{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#2563eb,#7c3aed);display:grid;place-items:center;font-style:normal;font-size:17px}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:13px 24px;border-radius:12px;background:linear-gradient(90deg,#2563eb,#7c3aed);color:#fff;border:0}
+.btn:hover{filter:brightness(1.12)}
+.btn:focus-visible{outline:3px solid var(--hi);outline-offset:3px}
+.login{min-height:calc(100vh - 68px);display:grid;place-items:center;padding:32px 20px;background:radial-gradient(900px 420px at 80% -10%,rgba(124,58,237,.28),transparent 70%)}
+.lbox{background:var(--s);border:1px solid var(--l);border-radius:18px;padding:28px;max-width:440px;width:100%}
+.lbox h1{font-size:28px;font-weight:800;margin-bottom:6px}
+.lbox h1 em{font-style:normal;color:var(--hi)}
+.lbox p{color:var(--mut);margin:0 0 18px;font-size:15px}
+.lbox label{display:block;font-weight:700;font-size:13px;margin-bottom:14px}
+.lbox input{display:block;width:100%;margin-top:6px;padding:12px 14px;border:1px solid var(--l);border-radius:10px;background:var(--bg);color:var(--ink);font:inherit}
+.lbox input:focus-visible{outline:3px solid var(--hi);outline-offset:1px}
+.lbox button.btn{width:100%;cursor:pointer;font:inherit;font-weight:700}
+.msg{color:#ffb4b4;font-size:14px;min-height:20px;margin:-4px 0 10px}
+</style>
+</head>
+<body>
+<header><div class="w"><div class="brand"><i>T</i>Tathwir</div></div></header>
+<main class="login"><form class="lbox" id="f" novalidate>
+<h1>Masuk ke <em>Tathwir</em></h1>
+<p>Isi nama dan email untuk mulai belajar. Progresmu disimpan berdasarkan email.</p>
+<label>Nama lengkap<input name="name" required maxlength="80" autocomplete="name"></label>
+<label>Email<input name="email" type="email" required maxlength="120" autocomplete="email"></label>
+<div class="msg" id="msg" role="alert"></div>
+<button class="btn" type="submit">Mulai belajar</button>
+</form></main>
+<script>
+(function(){
+var f=document.getElementById("f"),m=document.getElementById("msg");
+try{var me=JSON.parse(localStorage.getItem("tathwir-me")||"null");if(me){f.name.value=me.name||"";f.email.value=me.email||""}}catch(e){}
+f.addEventListener("submit",function(e){
+  e.preventDefault();
+  var n=f.name.value.replace(/\s+/g," ").trim(),em=f.email.value.trim().toLowerCase();
+  if(!n||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){m.textContent="Isi nama dan email dengan benar.";return}
+  try{localStorage.setItem("tathwir-prefill",JSON.stringify({name:n,email:em}))}catch(x){}
+  location.href="app.html";
+});
+})();
+</script>
+</body></html>
